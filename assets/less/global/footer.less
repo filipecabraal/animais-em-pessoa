@@ -1,0 +1,78 @@
+.footer {
+	padding: 15px 0;
+	height: 100px;
+	background-color: #fff;
+
+	&__copy {
+		margin: 28px 0;
+		display: block;
+		float: left;
+		font-size: .875em;
+		color: #545454;
+		text-align: center;
+	}
+
+	.social {
+		margin: 20px 0;
+		float: right;
+
+		.item {
+			margin-left: 60px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+
+			.img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+// hover 
+@media only screen and (min-width: 1200px) {
+	
+}
+
+// desktop 1024
+@media only screen and (max-width: 1200px) {
+
+}
+
+// celular com porcentagem
+@media only screen and (max-width: 992px) {
+	.footer {
+		.social {
+			.item {
+				margin-left: 30px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+
+}
+
+// celulares tela pequena
+@media only screen and (max-width: 767px) {
+	.footer {
+		position: relative;
+		height: auto;
+		margin-bottom: 40px;
+
+		&__copy {
+			float: none;
+			margin: 10px 0;
+		}
+
+		.social {
+			float: none;
+			margin: 15px 0;
+			text-align: center;
+
+			.item {
+				margin: 0 10px;
+			}
+		}
+	}
+}

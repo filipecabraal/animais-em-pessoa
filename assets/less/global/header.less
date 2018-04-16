@@ -1,0 +1,106 @@
+.header {
+
+	&__logo {
+		display: inline-block;
+		width: 192px;
+		height: 92px;
+		margin: 20px 0;
+		.misc('logo.jpg', 0 0 no-repeat);
+		background-size: 100%;
+		text-indent: -999em;
+	}
+
+	.phone {
+		display: table;
+		margin: 50px auto 0;
+		span {
+			display: block;
+			padding: 8px 20px 8px 55px;
+			.svg('call.svg', 20px center @secundary no-repeat);
+			background-size: 25px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			border-radius: 25px;
+		}
+	}
+
+	.social {
+		margin-top: 50px;
+		float: right;
+
+		.item {
+			margin-left: 60px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+
+			.img {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+// hover 
+@media only screen and (min-width: 1200px) {
+	
+}
+
+// desktop 1024
+@media only screen and (max-width: 1200px) {
+
+}
+
+// celular com porcentagem
+@media only screen and (max-width: 992px) {
+	.header {
+		&__logo {
+			width: 150px;
+			height: 72px;
+		}
+
+		.phone {
+			float: right;
+			margin-top: 30px;
+		}
+
+		.social {
+			display: none;
+		}
+	}
+}
+
+// celulares tela pequena
+@media only screen and (max-width: 767px) {
+
+	.header {
+		&__logo {
+			display: table;
+			margin: 10px auto;
+		}
+
+		.phone {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 999;
+			width: 100%;
+			padding: 5px 0;
+			background-color: @secundary;
+
+			span {
+				float: none;
+				display: table;
+				margin: auto;				
+				border-radius: 0px;
+				font-weight: 700;
+			}
+			
+		}
+
+	}
+
+}
+
